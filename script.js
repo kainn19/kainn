@@ -50,6 +50,16 @@ const PROJECTS = [
     images: ['pr01.jpg','pr05.jpg','pr03.jpg','pr02.jpg','pr07.jpg','pr04.jpg','pr06.jpg','pr08.jpg']
   },
   {
+    id: 'amazeeri',
+    category: 'Streetwear Campaign',
+    title: 'amazeeri_',
+    place: 'Algerian Sahara',
+    tagline: 'A visual identity rooted in cultural heritage, embroidery, and Algerian Saharan imagery.',
+    type: 'gallery',
+    folder: 'assets/amazeeri/',
+    images: ['az05.jpg','az02.jpg','az04.jpg','az01.jpg','az03.jpg']
+  },
+  {
     id: 'stndby',
     category: 'AI Video',
     title: 'STND BY',
@@ -63,11 +73,6 @@ const PROJECTS = [
 ];
 
 const IN_DEVELOPMENT = [
-  {
-    title: 'amazeeri_',
-    note: 'A visual identity rooted in cultural heritage, embroidery, and Algerian Saharan imagery.',
-    status: 'In Development'
-  },
   {
     title: 'Algerian Sahara',
     note: 'A concept project set in Tassili n\u2019Ajjer / Djanet.',
