@@ -24,6 +24,19 @@
 <div id="loader">
   <div class="loader-mark"><img src="assets/brand/logo.png" alt="KAINN"><span>KAINN</span></div>
 </div>
+<script>
+  /* Independent failsafe: guarantees the loader hides no matter what happens
+     in script.js later. This runs in its own scope immediately. */
+  (function(){
+    function hide(){
+      var l = document.getElementById('loader');
+      if(l) l.classList.add('hidden');
+    }
+    if(document.readyState === 'complete') hide();
+    else window.addEventListener('load', function(){ setTimeout(hide, 400); });
+    setTimeout(hide, 1800);
+  })();
+</script>
 
 <!-- Custom cursor -->
 <div class="cursor" id="cursor"></div>
